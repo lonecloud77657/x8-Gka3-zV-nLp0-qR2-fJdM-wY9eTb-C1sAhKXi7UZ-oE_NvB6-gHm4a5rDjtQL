@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <title>🎯抽奖轮盘</title>
   <style>
-    body { font-family: sans-serif; text-align: center; background: #f0f0f0; padding-top: 30px; }
-    canvas { border: 4px solid #333; border-radius: 50%; background: white; }
+    body { font-family: sans-serif; text-align: center; background: #222222; padding-top: 30px; }
+    canvas { border: 4px solid #333; border-radius: 50%; background: rgb(95, 95, 95); }
     button { margin: 10px; padding: 10px 20px; font-size: 16px; cursor: pointer; }
     input[type="text"], input[type="number"] { padding: 6px; margin: 5px; }
     #result { font-size: 24px; margin-top: 20px; }
     #secretPanel { margin-top: 30px; }
     #controls {
       display: none; margin-top: 30px; background: #fff; padding: 20px;
-      border: 1px solid #ccc; max-width: 600px; margin: 30px auto;
+      border: 1px solid #222222; max-width: 600px; margin: 30px auto;
     }
     .entry { margin-bottom: 8px; }
     #totalDisplay { font-weight: bold; margin-bottom: 10px; color: #333; }
@@ -21,7 +21,7 @@
 <body>
 
   <h2>⬇</h2>
-  <canvas id="wheel" width="500" height="500"></canvas><br>
+  <canvas id="wheel" width="500" height="500" ></canvas><br>
   <button onclick="spin()">🎰 开始抽奖</button>
   <button onclick="removeSelected()">🗑️ 删除被选中项</button>
   <div id="result">结果：尚未抽奖</div>
